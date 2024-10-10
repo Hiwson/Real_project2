@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fully responsive web</title>
+  <style>
+  /*css for mobile phones*/
+  @media screen and (min-width:400px) and (max-width:790px){
+    *{box-sizing: border-box;}
+    header{
+ 
+    }
+    #logo{
+      color:#B53838;
+    }
+    span{
+      color:crimson;
+    }
+    li{
+      display: flex;
+      flex-flow:column;
+      margin-left:2px ;
+    }
+    #l{display: none;}
+    #l1{
+      display:flex;
+      gap:10px;
+    }
+    .btn-holder{
+      margin:0% 20% 0% 35%;
+    }
+    .btn-holder>button:hover{
+      background-color:black;
+      color:white;
+    }
+    #srh{
+      position:absolute;
+      left:33%;
+      height:20px;
+      top:104px;
+      width:55%;
+    }
+    #list-input{
+      width:75px;
+      position:absolute ;
+      top:104px;
+      left: 84.5px ;
+      height: 20px;
+    }
+    #srh-holder{
+      display:inline;
+      column-gap:2px;
+    }    
+    #big-img{
+      width:100%;
+      height:250px;
+    }
+    #small-img{
+      width:50px;
+      height:50px;
+      position:absolute;
+      left:20px;
+      top:270px;
+    }
+    #h4{
+      border:2px solid black;
+      width:100%;
+      height:39px;
+      padding-top:10px;
+      padding-bottom:auto;
+    }
+    .slide-img{
+      height:250px;
+      width:198px;
+      margin-right:3px ;
+    }
+    #ds-holder{
+      display:flex;
+      flex-flow:row;
+      gap:7px;
+    }
+    .tittles{
+      display:grid;
+      grid-template-columns: auto auto;
+    }
+    #h3{
+      text-align: right;
+    }
+    #btn3{
+      height:50px;
+      padding:5px 5px 5px 5px;
+    }
+    .btn4{
+      height:50px;
+      margin-right:2px;
+      margin-left:1px ;
+      width:198px;
+    }
+    .btn5{
+      height:40px;
+    }
+    .btn2{
+      display:grid;
+      grid-template-columns:auto auto;
+    }
+    .btn-holder2{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-row-gap: 20px;
+    }
+    #big-div-pic{width:100%;}
+    .middle-box{
+      border: 2px solid black;
+      margin:auto;
+      width:100%;
+      padding:5px 20% 5px ;
+      background: antiquewhite;
+    }
+    #img-container{
+      display:grid;
+      grid-template-columns: auto auto;
+    }
+    footer{
+      background-color:rgba(186, 188, 216, 1);
+      color:black;
+    }
+    .ft-div,ul{
+      display:inline;
+    }
+    .ft-list{
+      display:flex;
+      flex-flow:column;
+    }
+    .ft-div{
+      display:grid;
+      grid-template-columns: auto auto;
+    }
+    .exectra>li{
+      display:inline;
+    }
+    #l2{display:none;}
+  }
+  .btn4:hover{background-color:#EC9D29;}
+  .btn5:hover{background-color:#EC9D29;}
+    /*for pc
+    .ft-div{
+      display:grid;
+      grid-template-columns: auto auto auto auto auto;
+    }*/
+    
+    /*styles for pc*/
+    @media screen and (min-width:820px) and (max-width:1500px){
+    *{box-sizing: border-box;}
+    body{background-color:white;}
+    header{
+ 
+    }
+    li{
+      display:inline;
+      float:left;
+      margin-right:9px;
+    }
+    #l11{display:none;}
+    #l2{display:inline;}
+    .btn-holder{
+      margin:0% 30% 0% 35%;
+      margin-left:43%;
+    }
+    .btn-holder>button:hover{
+      background-color:black;
+      color:white;
+    }
+    #srh{
+      position:absolute;
+      left:41%;
+      height:20px;
+      top:76px;
+    }
+    #list-input{
+      width:75px;
+      position:absolute ;
+      top:76px;
+      left:36%;
+      height: 20px;
+    }    
+    #big-img{
+      width:100%;
+      height:250px;
+    }
+    #small-img{
+      width:50px;
+      height:50px;
+      position:absolute;
+      left:20px;
+      top:270px;
+    }
+    #h4{
+      border:2px solid black;
+      width:100%;
+      height:39px;
+      padding-top:10px;
+      padding-bottom:auto;
+    }
+    .slide-img{
+      height:250px;
+      width:230px;
+    }
+    #ds-holder{
+      display:flex;
+      flex-flow:row;
+      gap:7px;
+    }
+    .tittles{
+      display:grid;
+      grid-template-columns: auto auto;
+    }
+    #h3{
+      text-align: right;
+    }
+    #btn3{
+      height:50px;
+      padding:5px 5px 5px 5px;
+    }
+    .btn4{
+      height:50px;
+      width:230px;
+    }
+    .btn-holder2{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+    .middle-box{
+      border: 2px solid black;
+      margin:auto;
+      width:80%;
+      padding:10px 30% 10px ;
+      background: antiquewhite;
+    }
+    #img-container{
+      display:grid;
+      grid-template-columns: auto auto auto auto;
+    }
+    #big-div-pic{width:270px;}
+    .big-div{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      column-gap:20px;
+    }
+    footer{
+      background-color:rgba(186, 188, 216, 1);
+      color:black;
+    }
+    .ft-div,ul{
+      display:inline;
+    }
+    .ft-list{
+      display:flex;
+      flex-flow:column;
+    }
+    .ft-div{
+      display:grid;
+      grid-template-columns: auto auto auto auto auto;
+    }
+    #ft-list{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    .exectra>li{
+      display: inline-flex;
+      margin-right: 8px;
+    }
+    .btn2{
+      display:block;
+    }
+    .btn5{
+      width:120px;
+    }
+    #l{display: inline;}
+    }
+    
+
+  </style>
+  </head>
+
+<body>
+  <header>
+    <ul id="l1">
+      <li id="logo" style="color: red;">Flenory <span style="color:crimson">doors</span></li>
+      <li>Home</li>
+      <li>New order</li>
+      <li>Offers</li>
+      <li>Basket</li>
+      <li>New arrivals</li>
+      <li id="l">Direct import</li>
+      <li id="l">Check discounts</li>
+      <li id="l">About Us</li>
+      <li id="l">Contact Us</li>
+      <li id="l">Seek job</li>
+      <li id="l">Sign Up</li>
+    </ul>
+  </header>
+  <hr>
+  <div class="btn-holder">
+    <button class="top-btn">Buy Doors</button>
+    <button class="top-btn">Buy Gates</button>
+  </div><br>
+  
+  <div id="biggy">
+  <div id="srh-holder">
+    <input list="list" id="list-input" placeholder="Material">
+    <datalist id="list">
+      <option value="Metalic">Italian</option>
+      <option value="Wooden">Egyptian</option>
+      <option value="Glass">Local</option>
+    </datalist>
+  <input type="search" id="srh" placeholder="Search here">
+  </div>
+  <img src="door1.jpg" alt="" id="big-img">
+  <img src="door12.jpg" alt="" id="small-img">
+  </div>
+  
+    <h4 id="h4"><marquee behavior="" direction="left">Make your best door purchasings in this web  
+    We also deal in other services such as:interiors, plumbing, metalworks and furniters</marquee></h4>
+  <br>
+  <div class="tittles">
+    <h3>Latest door designs</h3>
+    <h3 id="h3">Recommended</h3>
+  </div>
+  <div id="img-container">
+    <div id="img-holder">
+    <img src="door8.jpg" alt="" class="slide-img">
+    <h4>Indian style</h4>
+    <div id="ds-holder">
+      <p>Minimum price
+      <br>Ksh 12,000.00
+      </p>
+      <button id="btn3">23/50 sold out</button>
+    </div>
+    </div>
+
+    <div id="img-holder">
+    <img src="door9.jpg" alt="" class="slide-img">
+    <h4>Italian style</h4>
+    <div id="ds-holder">
+      <p>Minimum price
+      <br>Ksh 10,000.00
+      </p>
+      <button id="btn3">16/24 sold out</button>
+    </div>
+    </div>
+  
+
+    <div id="img-holder">
+    <img src="door4.jpg" alt="" class="slide-img">
+    <h4>Local style</h4>
+    <div id="ds-holder">
+      <p>Minimum price
+      <br>Ksh 11,500.00
+      </p>
+      <button id="btn3">13/40 sold out</button>
+    </div>
+    </div>  
+
+    <div id="img-holder">
+    <img src="door5.jpg" alt="" class="slide-img">
+    <h4>British style</h4>
+    <div id="ds-holder">
+      <p>Minimum price
+      <br>Ksh 16,100.00
+      </p>
+      <button id="btn3">15/19 sold out</button>
+    </div>
+    </div>
+  </div>    
+    <div class="middle-box">See more of our other products</div><br>
+    
+    <h3> Get our story</h3>
+    <div class="big-div">
+        <img src="door6.jpg" alt="" id="big-div-pic">
+        <p>Flenory doors is bussines that was established in 2005.
+        It is under Flenory family company that deals with different businesses and commodities like furnitures making and jobs like plumbing.<br>
+       We as a company are dedicated to giving our precious customers the best commodities and services at all times.We are readily available in major cities and other outskirts of major town where we have the same products and services. <br></p>
+      
+      <p>On buying our commodities we ensure that it has been safely delivered at the site or where you may want it to go,for our customers on buying commodities whose worthis greater than Ksh 60,000 we usually give a 15% discount on the commodities purchased and a 25% discount on commodities whose worth exceeds Ksh 100,000</p>
+      
+      <div class="btn2" style="display:grid; grid-template-columns:auto; row-gap: 5px; ">
+        <button class="btn5">Flash sales</button>
+        <button class="btn5">Check offers </button>
+      </div>
+    </div><br>
+  <div class="btn-holder2">
+    <button class="btn4">Place order</button>
+    <button class="btn4">Ship from abroad</button>
+    <button class="btn4">Switch to other services</button>
+    <button class="btn4">Rate our service</button>
+  </div><br>
+  <footer class="ft">
+    <div class="ft-div">
+      <ul class="ft-list">
+        <h4>Our Branches</h4>
+        <li>Nairobi-Nginyo towers(HQ)</li>
+        <li>Kisumu-Kinju traders complex</li>
+        <li>Nakuru-Kikwa house</li>
+        <li>Mombasa-Fahari plaza</li>
+        <li>Thika-Mugo house</li>
+        <li>Eldoret-Mbiau house</li>
+      </ul>
+      <ul class="ft-list">
+        <h4>Reach us on</h4>
+        <li>0707818283</li>
+        <li>0719273738</li>
+        <li>flenory23doors@gmail.com</li>
+        <li>Flenory_Doors</li>
+        <li>Flenory doors</li>
+      </ul>
+      <ul class="ft-list">
+        <h4>We sponsor:</h4>
+        <li>Chichester Fc</li>
+        <li>Red Eagle Fc</li>
+        <li>Hillborough bikers</li>
+        <li>Kianz volleyball team</li>
+        <li>Longshort tennis team</li>
+      </ul>
+      <ul class="ft-list">
+        <h4>Other services</h4>
+        <li>Plumbing</li>
+        <li>Interior finishing</li>
+        <li>Biogas systems installation</li>
+        <li>CCTV installation</li>
+        <li>Alarm installation </li>
+      </ul>
+      <ul class="ft-list" id="ft-list">
+        <h4>Origin countries</h4>
+        <li></li>
+        <li id="li">Kenya</li>
+        <li id="li">India</li>
+        <li id="li">Italy</li>
+        <li id="li">South Africa</li>
+        <li id="li">Egypt</li>
+        <li id="li">Tanzania</li>
+        <li id="li">Ghana</li>
+        <li id="li">Nigeria</li>
+        <li id="li">Japan</li>
+      </ul>
+     </div>
+  </footer>
+  <div class="exectra">
+    <li id="l11" style="color:red;">We partner with:</li>
+    <li>Ujay welders |</li>
+    <li>Strong-wood furniters |</li>
+    <li>Nishak solutions |</li>
+    <li>Denmark interiors |</li>
+    <li>Shnuk furnitures |</li>
+    <li>Mordan Fittings |</li>
+    <li style="color:red;" id="l2">We partner with:</li>
+  </div>
+</body>
+
+</html>
